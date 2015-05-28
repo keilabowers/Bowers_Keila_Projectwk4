@@ -1,0 +1,287 @@
+/* ---- Keila Bowers (0004632583) PWA2 1505 ---- */
+
+body {
+	overflow: auto;
+	background:rgb(105, 188, 194);
+	margin: 0;
+	padding: 0;
+	clear: both;
+	font-family: sans-serif;
+	}
+	
+/* ---- Global Nav ---- */	
+
+header img { /* Moves logo away from edge */
+	margin-left: 175px;
+	margin-top: 25px;
+	}
+
+.navbtn { /* puts login nav to the right of logo */
+	float: right;
+	margin-right: 175px;
+	margin-top: 25px;
+	}	
+	
+/* ---- Call to Action ---- */
+
+#ctaimage { /* makes the cta image have a tint with the gradient and a shadow; defines height */
+	clear: both;
+	height: 300px;
+	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    					url(../images/desk.jpg);
+    -moz-box-shadow:    3px 3px 3px 3px #000;
+  	-webkit-box-shadow: 3px 3px 3px 3px #000;
+  	box-shadow:         3px 3px 3px 3px #000;
+    /*
+	linear-gradient(rgba(105, 188, 194, 0.5), rgba(105, 188, 194, 0.5)),
+	*/
+	}
+
+/* uses absolute positioning to place text over CTA image */	
+.join { 
+	color: black;
+	position: relative;
+	width: 100%;
+	clear: both;
+	}
+
+.join h1  { 
+	position: absolute; 
+	top: 50px;
+	left: 175px;
+	padding: 5px; 
+	color: white;
+	font-size: 1.875em;
+	}
+	
+.join p {
+	position: absolute; 
+	top: 100px;
+	left: 175px;
+	padding: 5px; 
+	font-size: 1.5em;
+	color: white;
+	}
+		
+.join a {
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5em;
+	color: black;
+	position: absolute; 
+	top: 200px; 
+	left: 400px; 
+	width: 200px;
+	padding: 5px; 
+	background: rgba(255,255, 255,.7);
+	border-radius: 5px;
+	} 
+
+/* ---- Details ---- */
+
+#details { /*container for detail items below*/
+	max-width: 1050px;
+	margin-left: 175px;
+	margin-top: 50px;
+	background:rgb(105, 188, 194);
+	overflow: auto;
+	}
+	
+#create, #sort, #connect { /* sets items to sit beside each other in a row */
+	float: left;
+	width: 330px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	}	
+
+#details img { /* positions and defines height of image */
+	margin-top: 10px;
+	width: 64px;
+	height: 64px;
+	}
+
+/* ---- Registration Form ---- */
+
+#reg {
+	width: 1050px;
+	margin: auto;
+	margin-top: 50px;
+	border: 1px solid black;
+	padding: 10px;
+	background: #ccc;
+	border-radius: 5px;
+	}
+	
+#reg fieldset {
+	border: none;
+	border-top: 1px dotted black;
+	padding-top: 25px;
+	}
+		
+#reg label {
+	width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+	}
+
+#reg input {
+    height:20px; 
+    width:220px; 
+    margin-bottom: 5px;
+	}
+	
+/* ---- Admin Dashboard ---- */
+
+
+.btn {
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5em;
+	color: black;
+	width: 200px;
+	padding: 5px; 
+	background: rgba(255,255, 255,.7);
+	border-radius: 5px;
+	}
+/* ---- Project Div ---- */
+
+#sortJQ {
+	clear: both;
+	overflow: hidden;
+	width: 600px;
+	margin-left: 175px;
+	margin-top: 50px;
+	background: #ccc;
+	padding: 20px;
+	border-radius: 5px;
+	}
+
+
+
+/* ---- Accordion ---- */
+
+#accordion { /* sets container width and centers on page */
+	width: 1050px;
+	margin: auto;
+	}
+
+#dash { /* moves dashboard text to line up with logo */
+	margin-left: 175px;
+	}
+	
+#tabs-nav {
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-decoration:none;
+	list-style: none;
+	width: 500px;
+	}
+
+#tabs-nav li { /* Positions tab text and outlines it to look like a tab; changes cursor to help show that it can be clicked to user */
+	float: left;
+	width: 100px;
+	margin: 0;
+	cursor: pointer;
+	padding: 25px;
+	background-color: #666;
+	border: 1px solid black;
+	color: #ccc;
+	overflow: auto;
+	text-align: center;
+	}
+
+#tabs-nav a {
+	color: white;
+	text-decoration: none;
+	list-style: none;
+	}
+
+#tabs {	 /* sets width\color of paragraph box */
+	clear: both;
+	background: #ccc;
+	width: 1050px;
+	height: 200px;
+	padding: 10px;
+	}
+
+#tabs p {
+	margin: 25px;
+	}
+
+button {
+	margin: 10px;
+	}
+	
+/* ---- Modal ---- */
+
+.modalClick { /* positons link */
+	margin-left: 175px;
+	}
+
+#overlay { /*hide tint overlay until modal is selected; puts it behind modal popup box and covers the full page */
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	}
+
+#modal { /* hides modal popup until selected; positions box and puts it in front of overlay */
+	display: none;
+	width: 600px;
+	padding: 10px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+	background: #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1001;
+	}
+
+#modal .close { /* sets position of X and changes the cursor so it can be clicked on */
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	}
+
+#modal form { /*puts form in line */
+    display:inline-block;
+    float:left;
+	}
+	
+	
+.projectStatus > input[type=radio] { /* hides radio buttons */
+	display: none;
+	}	
+
+input[type=radio] + img { /*make image 'clickable */
+	display: inline-block;
+	cursor: pointer;
+	padding: 5px;
+	}
+
+input[type=radio]:checked + img { /* puts border around selected status */
+	border: 5px solid #69c2bc;
+	}
+
+/* ---- Tooltip ---- */
+/* hides the tooltip until JQ calls it. Gives tooltip black bg with white text. */
+.tooltip {
+	display: none;
+	position: absolute;
+	background: #000;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	}

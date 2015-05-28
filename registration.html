@@ -1,0 +1,100 @@
+<!doctype html>  
+<!-- Keila Bowers (0004632583) PWA2 1505 -->
+
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Registration</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery-ui-1.11.4.custom/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css">
+	<!-- end CSS-->
+	
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="images/scheme_logo.png"></a>
+		<div class="navbtn">
+  			<label></label>
+  			<input id="username" name="signinButton" type="text" placeholder="my_username" title="Please enter your username" class="masterTooltip"/>
+  			
+  			<label></label>
+  			<input id="password" name="signinButton" type="password" placeholder="********" title="Please enter your password" class="masterTooltip" />
+  			
+  			<button name="signinButton" id="signinButton" type="button">Sign In</button>
+		</div>
+	</header>	
+
+		<form action="" method="post" id="reg">
+			<hgroup>
+				<h1>Registration</h1>
+				<p>Please complete the account registration form below.</p>
+			</hgroup>  
+		
+			<fieldset>
+				<div>
+				<label for="fname">First name:</label>
+				<input id="fname" name="fname" type="text" placeholder="Jane" required aria-required="true" title="Please enter your first name" class="masterTooltip" >
+				</div>
+				<div>
+				<label for="lname">Last name:</label>
+				<input id="lname" name="lname" type="text" placeholder="Doe" required aria-required="true" title="Please enter your last name" class="masterTooltip" >
+				</div>
+						
+				<div>
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email" placeholder="jdoe@gmail.com" required aria-required="true" title="Please enter your email address to be able to retrieve account information in an emergency" class="masterTooltip">
+				</div>
+				
+				<div>
+				<label for="usernameReg">Username:</label>
+				<input id="usernameReg" name="usernameReg" type="text" placeholder="my_username" title="Please select a username" class="masterTooltip">
+				</div>
+				
+				<div>
+				<label for="passwordReg">Password:</label>
+				<input id="passwordReg" name="passwordReg" type="password" placeholder="********" title="Please enter your requested password" class="masterTooltip">
+				</div>
+				
+				<div>
+				<label for="confirm">Confirm password:</label>
+				<input id="confirm" name="confirm" type="password" placeholder="********" title="Re-enter password" class="masterTooltip">
+				</div>
+				
+				<button id="register" name="register" type="button">Create Account</button>
+			</fieldset>  			
+							
+		</form>	
+	
+	
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
